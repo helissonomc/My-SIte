@@ -30,6 +30,7 @@ def register(request):
             messages.success(request, 'User '+request.POST.get('first_name')+ ' created!')
             return redirect('/login')
         else:
+            print('aaaaaaaaaaaaaaaaaaaaaaa')
             messages.warning(request, 'fields filled incorrectly')
             return redirect('/register')
     context = {'form': form}
