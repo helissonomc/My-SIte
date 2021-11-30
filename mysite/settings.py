@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'my_site_db',
         'USER': 'postgres',
-        'PASSWORD': '91677194',
+        'PASSWORD': '**',
         'HOST': 'localhost',
         'PORT': '5432'
     }
