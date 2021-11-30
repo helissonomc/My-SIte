@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Hélisson Magalhães</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'todo' %}">To-do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About me</a>
+      </li>
+    </li>
+      
+    </ul>
+  </div>
+  <span class="welcome-msg" >Welcome {{request.user}}</span>
+  <span> <a class="welcome-msg"  href="{% url 'logout' %}">logout</a></span>
+</nav>
